@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>[about:title]_{aspcms:sitetitle}</title>
+<meta name="Keywords" content="[about:keyword]" >
+<meta name="Description" content="[about:desc]" >
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/css.css" rel="stylesheet" type="text/css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/fuzhi.js"></script>
+<script language="JavaScript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/swfobject.js"></script>
+<script language="JavaScript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/slide1.js"></script>
+
+</head>
+
+<body>
+<div class="container">
+  <div class="logo">
+    <div class="biaozhi">
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="80" height="80">
+        <param name="movie" value="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/logo.swf" />
+        <param name="quality" value="high" />
+        <param name="wmode" value="transparent" />
+        <embed src="../images/logo.swf" width="80" height="80" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent"></embed>
+      </object>
+    </div>
+    <div class="logoer"><a href="/" target="_blank"><img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/logo.jpg" width="199" height="45" border="0" /></a></div>
+	  <div class="ggy"><img src=" {aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/flash.jpg" width="529" height="44" /></div>
+	  <div class="c"></div>
+  </div>
+
+    <div class="noback" style="position:relative">
+	<img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/ad_hj.jpg"/>
+	<img style="display:none" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/ad_fs.jpg"/>
+	<p style="position:absolute;line-height:25px;bottom:20px;right:20px;text-align:right"><span>1</span> <span>2</span></p>
+    </div>
+
+  <div class="nav"><ul>   <li class="tt"><a href="/" >首  页</a></li>
+   {aspcms:navlist}
+              {if:[navlist:sortid]<6}
+       <li class="tt"><a href="[navlist:link]"  title="[navlist:name]" >[navlist:name]</a></li>
+              {end if} 
+        {/aspcms:navlist}
+  <li><a href="/html/newslist/list-6-1.html" title="大课堂">大课堂</a></li>
+  </ul></div>
+  <div class="main">
+            {aspcms:template src=left1.html}
+	
+    <div class="news_right"> 
+                <div class="M001LC1101">
+                     
+                     <ul>
+                       <li>您所在的位置：</li>
+                       <li class="home"><a href="{aspcms:sitepath}{aspcms:languagepath}">首页</a>{aspcms:position}></li>
+                       <li class="cr">[position:link]{/aspcms:position}</li>
+                     </ul>
+                 </div>
+            
+  <div class="wrap">
+                <div class="list_top"><span><img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/ico6.gif" class="monlie"></span>[about:title]</div>
+               <div class="M001NS3101">
+        
+        <div class="body">
+             
+          <div class="content1200">
+[about:info]
+</div>
+          
+          <div class="clear"></div>
+          </div>
+        </div>
+            </div>
+            
+        <!--center--><!--right-->
+           
+        </div>
+   <div class="c"></div>
+  </div>
+  
+    {aspcms:template src=foot.html}
+  <div class="c"></div>
+  
+</div>    
+
+
+</body>
+</html>

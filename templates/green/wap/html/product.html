@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>[product:title]_{aspcms:sortname}_{aspcms:sitetitle}</title>
+<meta name="Keywords" content="[content:keyword]" >
+<meta name="Description" content="[content:desc]" >
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/css.css" rel="stylesheet" type="text/css" />
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/fuzhi.js"></script>
+</head>
+
+<body>
+{aspcms:template src=head.html}
+  <div class="main">
+                {aspcms:template src=left1.html}
+	
+    <div class="news_right rela_moble100"> 
+                <div class="M001LC1101 jxw25">
+                     
+                     <ul>
+                       <li class="home">您现在的位置：<a href="{aspcms:sitepath}{aspcms:languagepath}">首页</a>{aspcms:position} ></li>
+ 
+                       <li class="cr" >[position:link]{/aspcms:position}</li>
+                     </ul>
+            </div>
+            
+            <div class="wrap news_bac ">
+                <div class="list_top backg jxw23 "><span><img src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/images/ico6.gif" class="monlie"></span> {aspcms:sortname}</div>
+                <div class="M001PD3201">
+  <div class="tl"></div>
+  <div class="tr"></div>
+  <div class="tm"> </div>
+  <div class="body">
+    <div class="core">
+      <h3>[product:title]</h3>
+      <div class="source">
+        <ul>
+          <li><span>时间：</span> [product:date] </li>
+        </ul>
+      </div>
+      <div class="show">
+        <div class="pic"><span><img src="[product:pic]" width="180" height="180" jqimg="[product:pic]"></span></div>
+<div class="c"></div>
+      </div>
+      <div class="content" style="padding:5px;">
+   [product:info]
+      </div>
+      <div class="c"></div>
+    </div>
+  </div>
+  <div class="bl"></div>
+  <div class="br"></div>
+  <div class="bm"></div>
+  <div class="c"></div>
+</div>
+            </div>
+            <!--center--><!--right-->
+        </div>    
+<div class="c"></div>
+  </div>
+  
+    {aspcms:template src=foot.html}
+  <div class="c"></div>
+  
+</div>    
+
+
+
+</body>
+</html>

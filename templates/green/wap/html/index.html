@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{aspcms:additiontitle}_{aspcms:sitetitle}</title>
+<meta name="Keywords" content="{aspcms:sitekeywords}" >
+<meta name="Description" content="{aspcms:sitedesc}" >
+<link href="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/css/css.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="{aspcms:sitepath}/Templates/{aspcms:defaulttemplate}/js/fuzhi.js"></script>
+</head>
+
+<body>
+{aspcms:template src=head1.html}
+  <div class="main">
+        {aspcms:template src=left.html}
+	
+    <div class="middle"><div class="artcle"><h3>·关于我们</h3>
+        <div class="artcle-conn">      <p>&#160;&#160;&#160;&#160;<span style="font-size: small"><span style="font-family: Verdana">易学应用策划网是以《易经》理论为基础，以现代自然科学理论为指导，以客观准确的环境调查为依据，以知识密集型的智力服务为主要经营手段，专门从事“<b>命名策划、环境策划、预测及调理策划、美好人生及创业<span style="font-size: small">咨询策划</span>、企业人力资源指导、企业形象策划、以及常年易学策划顾问</b>”等为主的专业化易学应用策划机构。</span></span><br/>
+<br/>
+<span style="font-family: Verdana">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;该机构以弘扬易学、传承文明、应用易理为宗旨，融汇西方现代营销理念及东方儒学思想，强调个人生辰密码与现代传播策划学的综合应用，加上对汉语言文字学与美学的探究，并结合现代企业规范化管理、创新经营及营销管理等，率先开创了“<b>易学应用实验室</b>”。高精深的理论研究、高层次的经营策划、高水平的应用预测、高时效的咨询服务，可为各界人士及众多行业、企事业提供战略决策及运筹解决方案。</span> 
+<br/>
+   &#160;&#160;&#160;&#160;&#160;&#160;该机构拥有一支融合易学、商业与艺术等多领域的资深团队组合，注重古为今用、中西合璧
+<a style="color:red" href="/html/about/about-3.html" target="_blank">《详细</a></div>
+       
+    </div>
+	
+	
+	<div class="c"></div>
+	<div class="lyb_title">
+	<span>经典案例</span>
+	<a href="/html/newslist/list-5-1.html">更多>></a>
+	</div>
+	<div class="artcle">
+		<div class="artcle-conn">
+
+	{aspcms:content sort=5 num=10 order=order}
+		 <a href= "[content:link]">[content:title]</a> <br/>
+	{/aspcms:content}
+     </div>  
+     </div>
+    </div>
+            {aspcms:template src=right.html}
+	
+    <div class="c"></div>
+  </div>
+  
+{aspcms:template src=foot.html}
+  <div class="c"></div>
+  
+</div>    
+
+
+</body>
+</html>
